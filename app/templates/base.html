@@ -1,0 +1,24 @@
+{% extends 'bootstrap/base.html'%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the best Movie Review website </title>
+        {% endif %}
+    </head>
+    <body>
+        <!-- Content block -->
+        <div class="container">
+            {% block navbar %}
+                {% include 'navbar.html' %}
+            {% endblock %}
+            {% block content %}
+
+            {% endblock%}
+        </div>
+        
+    </body>
+</html>
